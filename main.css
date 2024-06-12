@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.div1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: column; 
+}
+
+.div2{
+    display: grid;
+    grid-template-areas:
+    'box-1'
+    'box-2 box-3'
+    'box-4'
+    ;
+    /* justify-content: center; */
+    /* align-items: center;  */
+    /* flex-direction: column; */
+}
+.first-para{
+    font-size: 30px;
+    margin-top: 40px;
+}
+.second-para{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 5px;
+}
+.third-para{
+    font-size: 20px;
+    margin: 5px;
+}
+.box-container1{
+margin: auto;
+height: 600px;
+width: 80%;
+position: relative;
+}
+.box-1{
+    margin-top: 70px; 
+    position: absolute;
+    left: 36%; 
+    width: 300px;
+    height: 200px;
+    grid-area: box-1;
+    border-top: solid rgba(243, 11, 11, 0.822);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.box-4{
+    position: absolute;  
+    bottom: 0; 
+    margin-left: 130px; 
+    width: 300px;
+    height: 200px; 
+    grid-area: box-2 ;
+    border-top: solid rgb(3, 206, 206) ;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.box-2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 190px; 
+    grid-area: box-3;
+    width: 300px;
+    height: 200px;
+    border-top: solid rgb(59, 59, 216);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.box-3{
+    position: absolute;
+    right: 0;
+    left: 36%;
+    bottom: -100px; 
+    grid-area: box-4;
+    width: 300px;
+    height: 200px;
+    border-top: solid rgba(221, 221, 4, 0.877);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.fa-solid{
+ font-size: 30px;
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ padding: 20px;
+ 
+}
+.fa-house-chimney{
+    color: rgba(243, 11, 11, 0.822) ;
+}
+.fa-lightbulb{
+    color: yellow ;
+}
+.fa-tv{
+    color: rgb(59, 59, 216) ;
+}
+.fa-magnifying-glass{
+    color: rgb(3, 206, 206) ;
+}
